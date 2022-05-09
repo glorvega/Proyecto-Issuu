@@ -2,15 +2,15 @@
 
 header {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: fixed;
     width: 100%;
-    box-shadow: 0px 8px 11px 0px rgba(0,0,0,0.75);;
+    position: absolute;
+    box-shadow: 0px 11px 8px -10px rgba(0,0,0,0.75);
 }
 
 .logo-issuu {
-width: 80%;
-float: left;
-margin-top: 10px;
+    width: 80%;
+    float: left;
+    margin-top: 10px;
 }
 
 .logo-issuu img {
@@ -18,9 +18,9 @@ margin-top: 10px;
 }
 
 .signIn {
-width: 20%;
-float: right;
-text-align: right;
+    width: 20%;
+    float: right;
+    text-align: right;
 /*margin o padding right*/
 }
 
@@ -29,3 +29,50 @@ text-align: right;
 }
 
 /*MAIN*/
+
+body {
+    position: relative;
+}  
+
+
+main {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-container {
+    padding-left: 100px;
+    padding-top: 100px;
+    flex-grow: 1;
+}
+.empty-container {
+    flex-grow: 1;
+}
+
+.email {
+    position: relative;
+    width: 100%;
+    height: 20px;
+}
+
+.password {
+    position: relative;
+    width: 100%;
+    height: 20px;
+}
+
+.checkbox {
+    padding-top: 20px;
+}
+
+.account-button {
+    border-radius: 12px;
+    color: gray;
+    border-color: gray;
+    border-style: dashed;
+}
+
+.create-account {
+    padding-top: 20px;
+}
